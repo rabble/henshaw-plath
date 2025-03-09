@@ -10,34 +10,56 @@
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
         }
-        #wrapper {
-            position: absolute;
+        #content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #loading {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #message {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <iframe id="wrapper" src="https://henshaw-plath.webflow.io" frameborder="0" allowfullscreen></iframe>
-    
+    <div id="loading">
+        <div id="message">
+            <h1>Redirecting to Henshaw-Plath's website</h1>
+            <p>Due to security restrictions, we cannot display the content directly here.</p>
+            <p>You will be redirected to <a href="https://henshaw-plath.webflow.io">henshaw-plath.webflow.io</a> in a few seconds.</p>
+            <a class="btn" href="https://henshaw-plath.webflow.io">Go Now</a>
+        </div>
+    </div>
+
     <script>
-        // Optional: You can add JavaScript here to handle any additional functionality
-        // For example, updating page title based on the iframe content
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const iframe = document.getElementById('wrapper');
-            
-            // Listen for messages from the iframe (if needed)
-            window.addEventListener('message', function(event) {
-                if (event.origin !== 'https://henshaw-plath.webflow.io') return;
-                // Handle messages from the iframe
-            });
-        });
+        // Redirect after a short delay
+        setTimeout(function() {
+            window.location.href = 'https://henshaw-plath.webflow.io';
+        }, 5000); // 5 second delay before redirect
     </script>
 </body>
 </html>
