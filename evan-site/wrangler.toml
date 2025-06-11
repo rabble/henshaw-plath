@@ -1,0 +1,14 @@
+# ABOUTME: Cloudflare Pages configuration file
+# ABOUTME: Defines build settings for deployment
+
+name = "evan-henshaw-plath"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "npm run build"
+
+[[build.environment]]
+NODE_VERSION = "18"
