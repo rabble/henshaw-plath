@@ -18,12 +18,12 @@ function Navigation() {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#edeee8]/95 backdrop-blur-sm border-b border-[#d9dbd0]">
+    <nav className="sticky top-0 z-50 bg-[#f5f1eb]/95 backdrop-blur-sm border-b border-[#e8e4de]">
       <div className="px-6 lg:px-12 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl font-bold">
-            Evan Henshaw-Plath
+          <Link to="/" className="font-display text-2xl font-bold text-[#2a2a2a]">
+            @rabble
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,15 +52,15 @@ function Navigation() {
           >
             <motion.span
               animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 6 : 0 }}
-              className="w-6 h-0.5 bg-[#151515] origin-center"
+              className="w-6 h-0.5 bg-[#2a2a2a] origin-center"
             />
             <motion.span
               animate={{ opacity: isOpen ? 0 : 1 }}
-              className="w-6 h-0.5 bg-[#151515]"
+              className="w-6 h-0.5 bg-[#2a2a2a]"
             />
             <motion.span
               animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -6 : 0 }}
-              className="w-6 h-0.5 bg-[#151515] origin-center"
+              className="w-6 h-0.5 bg-[#2a2a2a] origin-center"
             />
           </button>
         </div>
@@ -73,7 +73,7 @@ function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-[#d9dbd0]"
+            className="md:hidden border-t border-[#e8e4de]"
           >
             <div className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
@@ -84,7 +84,7 @@ function Navigation() {
                   className={`block font-mono text-sm ${
                     location.pathname === item.path
                       ? 'text-[#71a882]'
-                      : 'text-[#151515]'
+                      : 'text-[#2a2a2a]'
                   }`}
                 >
                   {item.label}

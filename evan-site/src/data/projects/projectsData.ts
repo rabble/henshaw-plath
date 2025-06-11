@@ -36,6 +36,39 @@ export const projectsData: Project[] = [
     fullDescription: "A peer-to-peer social network that operates without servers, giving users complete control over their social media experience."
   },
   {
+    slug: "quantstamp",
+    title: "Quantstamp",
+    category: ["Startup"],
+    summary: "Blockchain security company providing smart contract auditing",
+    client: "Quantstamp Inc",
+    releaseDate: "2017",
+    externalLink: "https://quantstamp.com",
+    imageUrl: "https://via.placeholder.com/600x400",
+    fullDescription: "Led engineering efforts at Quantstamp, building security infrastructure for blockchain applications and smart contracts."
+  },
+  {
+    slug: "affinity",
+    title: "Affinity",
+    category: ["Startup"],
+    summary: "Relationship intelligence platform for dealmakers",
+    client: "Affinity Inc",
+    releaseDate: "2018",
+    externalLink: "https://affinity.co",
+    imageUrl: "https://via.placeholder.com/600x400",
+    fullDescription: "Contributed to building a relationship intelligence CRM that uses AI to help dealmakers find and manage relationships."
+  },
+  {
+    slug: "neo",
+    title: "Digital Garage's Neo.com",
+    category: ["Startup"],
+    summary: "Japanese fintech and venture development platform",
+    client: "Digital Garage",
+    releaseDate: "2016",
+    externalLink: "https://neo.com",
+    imageUrl: "https://via.placeholder.com/600x400",
+    fullDescription: "Served as CTO helping to build innovative fintech solutions and venture development in the Japanese market."
+  },
+  {
     slug: "odeo",
     title: "Odeo",
     category: ["Startup"],
