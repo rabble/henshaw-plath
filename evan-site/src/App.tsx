@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Talks from './pages/Talks';
+import Podcasts from './pages/Podcasts';
 import Works from './pages/Works';
 import WorkDetail from './pages/WorkDetail';
 import Testimonials from './pages/Testimonials';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/talks" element={<Talks />} />
+          <Route path="/podcasts" element={<Podcasts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/works" element={<Works />} />
           <Route path="/works/:slug" element={<WorkDetail />} />

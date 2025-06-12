@@ -113,6 +113,9 @@ function Home() {
                   <a href="https://nos.social/rabble" className="block font-mono text-sm text-[#71a882] hover:underline">
                     Nostr: rabble@nos.social
                   </a>
+                  <a href="https://revolution.social" className="block font-mono text-sm text-[#71a882] hover:underline">
+                    Podcast: revolution.social
+                  </a>
                 </div>
               </div>
             </div>
