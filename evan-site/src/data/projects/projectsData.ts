@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
     summary: "Decentralized social networking platform built on Nostr protocol",
     releaseDate: "2023",
     externalLink: "https://nos.social",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "A decentralized social media platform that puts users in control of their data and social connections."
   },
   {
@@ -32,7 +32,7 @@ export const projectsData: Project[] = [
     client: "Planetary.social",
     releaseDate: "2020",
     externalLink: "https://planetary.social",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "A peer-to-peer social network that operates without servers, giving users complete control over their social media experience."
   },
   {
@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
     client: "Quantstamp Inc",
     releaseDate: "2017",
     externalLink: "https://quantstamp.com",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "Led engineering efforts at Quantstamp, building security infrastructure for blockchain applications and smart contracts."
   },
   {
@@ -54,7 +54,7 @@ export const projectsData: Project[] = [
     client: "Affinity Inc",
     releaseDate: "2018",
     externalLink: "https://affinity.co",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "Contributed to building a relationship intelligence CRM that uses AI to help dealmakers find and manage relationships."
   },
   {
@@ -65,7 +65,7 @@ export const projectsData: Project[] = [
     client: "Digital Garage",
     releaseDate: "2016",
     externalLink: "https://neo.com",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "Served as CTO helping to build innovative fintech solutions and venture development in the Japanese market."
   },
   {
@@ -76,7 +76,7 @@ export const projectsData: Project[] = [
     client: "Odeo Inc",
     releaseDate: "2005",
     externalLink: "https://twitter.com",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "Started as a podcasting platform, Odeo pivoted to create Twitter, one of the world's most influential social media platforms."
   },
   {
@@ -86,7 +86,7 @@ export const projectsData: Project[] = [
     summary: "Grassroots media activist network for independent journalism",
     releaseDate: "1999",
     externalLink: "https://indymedia.org",
-    imageUrl: "https://via.placeholder.com/600x400",
+    imageUrl: "/images/projects/nos-social.png",
     fullDescription: "A global network of independent media organizations and journalists offering grassroots, non-corporate coverage."
   }
 ];
