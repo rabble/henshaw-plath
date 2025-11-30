@@ -15,14 +15,31 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
+    id: "divine",
+    title: "Founder & Creator",
+    company: "diVine",
+    location: "Remote",
+    startDate: "2024",
+    endDate: "Present",
+    current: true,
+    description: "Reviving Vine as a decentralized short-form video platform built on Nostr, with a focus on human-made content and creator ownership",
+    achievements: [
+      "Restored 150,000-200,000 Vine videos from internet archives",
+      "Built on Nostr protocol for decentralized, censorship-resistant infrastructure",
+      "Implemented anti-AI verification using Guardian Project technology",
+      "Funded by Jack Dorsey's nonprofit 'and Other Stuff'",
+      "Enables creators to reclaim ownership of their original Vine content"
+    ]
+  },
+  {
     id: "verse",
     title: "CEO & Founder",
     company: "Verse Public Benefit Corp",
     location: "Remote",
     startDate: "2018",
-    endDate: "Present",
-    current: true,
-    description: "Leading the development of decentralized social media platforms including Planetary and nos.social",
+    endDate: "April 2025",
+    current: false,
+    description: "Led the development of decentralized social media platforms including Planetary and nos.social",
     achievements: [
       "Built and launched Planetary, a peer-to-peer social network",
       "Developed nos.social on the Nostr protocol",
