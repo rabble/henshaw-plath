@@ -20,23 +20,24 @@ function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl"
+          className="max-w-4xl mx-auto"
         >
           <h1 className="font-display text-5xl lg:text-6xl font-bold text-[#2a2a2a] mb-4">
             About
           </h1>
           <h2 className="font-mono text-2xl text-[#71a882] mb-8">
-            Product & Engineering Leadership
+            Building Democratic Social Media
           </h2>
           <p className="font-sans text-lg text-[#666666] leading-relaxed">
-            Decades of experience looking at the world we've got, analyzing where we should take it, 
-            and creating teams to make that dream a reality. From helping invent social media, 
-            podcasting, and twitter to thinking about what digital tools we need to build going forward.
+            I'm building the alternative to corporate-controlled social media through my public benefit corporation, 
+            Verse Communications. After helping invent social media and Twitter, I'm now focused on creating 
+            platforms where communities control their own social spaces, users own their data, and technology 
+            serves people rather than advertising algorithms.
           </p>
         </motion.div>
       </section>
 
-      {/* From Problem to Market Fit Section */}
+      {/* Current Mission Section */}
       <section className="px-6 lg:px-12 py-16 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,28 +46,31 @@ function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="font-display text-3xl font-bold text-[#2a2a2a] mb-8">
-            From problem to market fit
+            Why we need new social media
           </h2>
           <div className="space-y-6 text-[#666666] leading-relaxed">
             <p>
-              Creating software is a collective act, driven by coordination, the consensus of a common vision. 
-              The myth making of heroes that it is Jobs, Musk, Dorsey who've driven the creation of something new. 
-              But that's only a small part of the story. Leadership matters, it brings people together, 
-              it gives a narrative to make sense of the project.
+              Social media should be a public commons, not corporate property. The platforms we use daily 
+              weren't designed for our wellbeing – they were designed to extract our attention and data 
+              for advertising revenue. This surveillance capitalism model has fundamentally broken online discourse.
             </p>
             <p>
-              What really creates good software is the work of the team. Just enough coordination to stay in touch, 
-              in coordination, in collaboration, but not so much that it takes away from the work of each person on the project.
+              Through <strong>Verse Communications</strong>, I'm building a different path forward. Our 
+              decentralized social platform <strong>nos.social</strong> runs on the Nostr protocol, 
+              giving users true ownership of their accounts, connections, and data. No ads, no algorithmic manipulation, 
+              no corporate surveillance.
             </p>
             <p>
-              Successful software development is dependent on the team building something which works technically, 
-              but as important it needs to solve a real problem users have.
+              The future of social media is protocol-based, not platform-based. Instead of being locked 
+              into corporate silos, users can choose from dozens of interoperable apps while maintaining 
+              their identity and connections. This is how we rebuild social media as a tool for 
+              community organizing and authentic human connection.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* Lean and Agile Section */}
+      {/* Core Projects Section */}
       <section className="px-6 lg:px-12 py-16 bg-[#f5f1eb]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -75,34 +79,35 @@ function About() {
           className="max-w-4xl mx-auto"
         >
           <h3 className="font-mono text-sm font-semibold uppercase tracking-wider text-[#71a882] mb-6">
-            LEAN AND AGILE:
+            CURRENT PROJECTS:
           </h3>
-          <ul className="space-y-3 text-[#666666]">
-            <li className="flex items-start">
-              <span className="text-[#71a882] mr-3">•</span>
-              Software development is as much about learning and discovery as delivery
-            </li>
-            <li className="flex items-start">
-              <span className="text-[#71a882] mr-3">•</span>
-              Code to validate or invalidate a hypothesis
-            </li>
-            <li className="flex items-start">
-              <span className="text-[#71a882] mr-3">•</span>
-              Launch quickly, collect data, learn, adapt
-            </li>
-            <li className="flex items-start">
-              <span className="text-[#71a882] mr-3">•</span>
-              Light agile planning with a cadence of coordination rituals
-            </li>
-          </ul>
-          <p className="mt-8 text-[#666666] italic">
-            It's about getting the team on to the same page while encouraging passion and people 
-            driving to build to solve real user needs.
-          </p>
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-display text-xl font-bold text-[#2a2a2a] mb-2">nos.social</h4>
+              <p className="text-[#666666]">
+                Decentralized social media app built on Nostr protocol. User-owned accounts, chronological feeds, 
+                no ads or tracking. Interoperable with 50+ other Nostr applications.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-display text-xl font-bold text-[#2a2a2a] mb-2">rights.social</h4>
+              <p className="text-[#666666]">
+                Social Media Bill of Rights establishing five fundamental principles for free, 
+                open, and humane social platforms.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-display text-xl font-bold text-[#2a2a2a] mb-2">revolution.social</h4>
+              <p className="text-[#666666]">
+                My podcast exploring how protocol-based digital networks can replace corporate platforms 
+                to create a truly democratic digital commons.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </section>
 
-      {/* Professional Skills Section */}
+      {/* Background & Philosophy Section */}
       <section className="px-6 lg:px-12 py-16 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -111,53 +116,56 @@ function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="font-display text-3xl font-bold text-[#2a2a2a] mb-12">
-            Professional Skills
+            Background & Philosophy
           </h2>
 
           <div className="space-y-12">
             <div>
               <h3 className="font-display text-2xl font-bold text-[#2a2a2a] mb-4">
-                Software Development
+                From Twitter's Origins to Democratic Alternatives
               </h3>
               <div className="space-y-4 text-[#666666]">
                 <p>
-                  The social part of software development is as important as the technical. 
-                  Bringing a team together under a common purpose, with meaning and an understanding 
-                  of where we're going.
+                  As the first employee and de facto CTO at Twitter (2006), I helped build the platform 
+                  that would define modern social media. But I've witnessed firsthand how these platforms 
+                  evolved from tools for connection into surveillance machines optimized for engagement 
+                  and ad revenue.
                 </p>
                 <p>
-                  Building good software is a process of managed evolution. Large complicated systems 
-                  evolve like life, out of small changes and adaptations. Projects with lots of upfront 
-                  planning fail because it's not possible to have a perfect picture of where things are 
-                  and where they should go.
+                  Before Twitter, I co-founded Indymedia, an open-source media activist network that 
+                  grew to 180+ chapters worldwide. This taught me that decentralized, community-controlled 
+                  media is not just possible – it's essential for democratic discourse.
                 </p>
                 <p>
-                  Software is social, it's a human, living system, so we need to build it as people use it. 
-                  Collecting quantitative and qualitative feedback from users. Talking to them and watching 
-                  what they do instead of what they say is the way to build effective software that solves 
-                  real user problems.
+                  Now I'm applying those lessons to rebuild social media from the ground up. The technology 
+                  exists to create platforms where users control their own data, communities set their own 
+                  rules, and authentic connection matters more than algorithmic engagement.
                 </p>
               </div>
             </div>
 
             <div>
               <h3 className="font-display text-2xl font-bold text-[#2a2a2a] mb-4">
-                Languages
+                Technical Approach
               </h3>
-              <p className="text-[#666666] mb-4">
-                As a professional software developer for 25 years I've got experience in perl, python, 
-                java, ruby, shell, sql, javascript, lisp, swift, and a bunch of other languages.
-              </p>
-              <p className="text-[#666666] italic">
-                Being a professional developer is not about what you know, but how you're able to learn, 
-                constructing context out of complicated systems.
-              </p>
+              <div className="space-y-4 text-[#666666]">
+                <p>
+                  With 25+ years of software development across multiple languages and platforms, 
+                  I focus on building systems that serve human needs rather than corporate interests.
+                </p>
+                <p>
+                  My approach prioritizes open protocols over proprietary platforms, user ownership 
+                  over corporate control, and community governance over top-down moderation. 
+                  These aren't just technical choices – they're political ones that shape how 
+                  we relate to each other online.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
       </section>
 
-      {/* Never Stop Learning Section */}
+      {/* Vision Section */}
       <section className="px-6 lg:px-12 py-16 bg-[#f5f1eb]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -166,11 +174,12 @@ function About() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="font-display text-4xl font-bold text-[#2a2a2a] mb-6">
-            Never stop learning!
+            The future is protocol-based
           </h2>
           <p className="text-lg text-[#666666]">
-            The question is not what should we be building. The question is what are the 
-            fundamental problems that our users face.
+            Social media should be infrastructure for democracy, not a business model 
+            for surveillance. The technology exists to build something better – 
+            we just need to choose to build it.
           </p>
         </motion.div>
       </section>
@@ -184,19 +193,29 @@ function About() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="font-display text-4xl font-bold mb-6">
-            Let's create something great!
+            Join the revolution
           </h2>
           <p className="text-lg mb-8 text-white/80">
-            I love to tackle hard problems and work with people committed to building a better world. 
-            Software is eating the world, but we get to design that software, shape its affordances, 
-            use that power to shape the future. What should we build together?
+            The future of social media is being built right now. Whether you're a developer, 
+            community organizer, or someone who believes technology should serve people rather than profits, 
+            there's a place for you in this movement.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block px-8 py-4 bg-white text-[#2a2a2a] font-mono text-sm rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            GET IN TOUCH
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-4 bg-white text-[#2a2a2a] font-mono text-sm rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              GET IN TOUCH
+            </Link>
+            <a
+              href="https://nos.social"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 border border-white text-white font-mono text-sm rounded-lg hover:bg-white hover:text-[#2a2a2a] transition-colors"
+            >
+              TRY NOS.SOCIAL
+            </a>
+          </div>
         </motion.div>
       </section>
     </div>

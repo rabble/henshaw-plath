@@ -2,29 +2,9 @@
 // ABOUTME: Displays contact methods and location
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: Implement form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <div className="min-h-screen bg-[#f5f1eb]">
       {/* Header */}
@@ -53,161 +33,132 @@ function Contact() {
         </motion.div>
       </section>
 
-      {/* Contact Form and Info */}
-      <section className="px-6 lg:px-12 py-16">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
+      {/* Primary CTAs - What You Want Them To Do */}
+      <section className="px-6 lg:px-12 pb-16">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
           >
-            <h2 className="font-display text-3xl font-bold text-[#2a2a2a] mb-8">
-              Send a Message
-            </h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block font-mono text-sm font-medium text-[#666666] mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-[#e5e1da] rounded-lg bg-white focus:outline-none focus:border-[#71a882] transition-colors"
-                />
-              </div>
+            {/* Book Me for Podcast */}
+            <a 
+              href="mailto:evan@henshaw-plath.com?subject=Podcast%20Guest%20Invitation"
+              className="bg-gradient-to-br from-[#71a882] to-[#5a8a6b] text-white p-8 rounded-xl hover:shadow-lg transition-all group"
+            >
+              <span className="text-3xl mb-4 block">🎙️</span>
+              <h3 className="font-display text-2xl font-bold mb-2">Book Me for Your Podcast</h3>
+              <p className="text-white/90 mb-4">Let's discuss decentralized social media, tech activism, and building the future</p>
+              <span className="font-mono text-sm group-hover:underline">Send Invitation →</span>
+            </a>
 
-              <div>
-                <label htmlFor="email" className="block font-mono text-sm font-medium text-[#666666] mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-[#e5e1da] rounded-lg bg-white focus:outline-none focus:border-[#71a882] transition-colors"
-                />
-              </div>
+            {/* Listen to Revolution.social */}
+            <a 
+              href="https://revolution.social"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border-2 border-[#71a882] p-8 rounded-xl hover:shadow-lg transition-all group"
+            >
+              <span className="text-3xl mb-4 block">🎧</span>
+              <h3 className="font-display text-2xl font-bold mb-2 text-[#2a2a2a]">Listen to Revolution.social</h3>
+              <p className="text-[#666666] mb-4">My podcast exploring technology, society, and social change</p>
+              <span className="font-mono text-sm text-[#71a882] group-hover:underline">Listen Now →</span>
+            </a>
 
-              <div>
-                <label htmlFor="message" className="block font-mono text-sm font-medium text-[#666666] mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-[#e5e1da] rounded-lg bg-white focus:outline-none focus:border-[#71a882] transition-colors resize-none"
-                />
-              </div>
+            {/* Collaborate on Projects */}
+            <a 
+              href="mailto:evan@henshaw-plath.com?subject=Project%20Collaboration"
+              className="bg-white border-2 border-[#e5e1da] p-8 rounded-xl hover:shadow-lg hover:border-[#71a882] transition-all group"
+            >
+              <span className="text-3xl mb-4 block">🤝</span>
+              <h3 className="font-display text-2xl font-bold mb-2 text-[#2a2a2a]">Collaborate on Projects</h3>
+              <p className="text-[#666666] mb-4">Let's build tools for positive social change together</p>
+              <span className="font-mono text-sm text-[#71a882] group-hover:underline">Start Conversation →</span>
+            </a>
 
-              <button
-                type="submit"
-                className="w-full px-8 py-4 bg-[#71a882] text-white font-mono text-sm rounded-lg hover:bg-[#5d8d6d] transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
+            {/* Support the Fund */}
+            <a 
+              href="https://andotherstuff.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#2a2a2a] text-white p-8 rounded-xl hover:shadow-lg transition-all group"
+            >
+              <span className="text-3xl mb-4 block">💰</span>
+              <h3 className="font-display text-2xl font-bold mb-2">Support andotherstuff.org</h3>
+              <p className="text-white/90 mb-4">Fund supporting decentralized social media projects</p>
+              <span className="font-mono text-sm group-hover:underline">Learn More →</span>
+            </a>
           </motion.div>
+        </div>
+      </section>
 
-          {/* Contact Information */}
+      {/* Contact Information */}
+      <section className="px-6 lg:px-12 py-16 bg-white">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-8"
           >
-            <div>
-              <h2 className="font-display text-3xl font-bold text-[#2a2a2a] mb-8">
-                Contact Information
-              </h2>
-              
-              <div className="space-y-6">
-                {/* Location */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#71a882]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">📍</span>
-                  </div>
-                  <div>
-                    <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-1">Location</h3>
-                    <p className="text-[#666666]">Pōneke, Aotearoa</p>
-                    <p className="text-[#666666]">Wellington, New Zealand</p>
-                  </div>
+            <h2 className="font-display text-3xl font-bold text-[#2a2a2a] mb-12 text-center">
+              Connect With Me
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {/* Location */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#71a882]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📍</span>
                 </div>
+                <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-2">Location</h3>
+                <p className="text-[#666666]">Pōneke, Aotearoa</p>
+                <p className="text-[#666666]">Wellington, New Zealand</p>
+              </div>
 
-                {/* Email */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#71a882]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">✉️</span>
-                  </div>
-                  <div>
-                    <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-1">Email</h3>
-                    <a href="mailto:evan@protest.net" className="text-[#71a882] hover:text-[#5d8d6d] transition-colors">
-                      evan@protest.net
-                    </a>
-                  </div>
+              {/* Email */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#71a882]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">✉️</span>
                 </div>
+                <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-2">Email</h3>
+                <a href="mailto:evan@henshaw-plath.com" className="text-[#71a882] hover:text-[#5d8d6d] transition-colors">
+                  evan@henshaw-plath.com
+                </a>
+              </div>
 
-                {/* Social */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#71a882]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">🌐</span>
-                  </div>
-                  <div>
-                    <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-1">Social</h3>
-                    <div className="space-y-1">
-                      <a href="https://twitter.com/rabble" target="_blank" rel="noopener noreferrer" className="block text-[#71a882] hover:text-[#5d8d6d] transition-colors">
-                        @rabble on Twitter
-                      </a>
-                      <a href="https://linkedin.com/in/rabble" target="_blank" rel="noopener noreferrer" className="block text-[#71a882] hover:text-[#5d8d6d] transition-colors">
-                        LinkedIn Profile
-                      </a>
-                      <a href="https://github.com/rabble" target="_blank" rel="noopener noreferrer" className="block text-[#71a882] hover:text-[#5d8d6d] transition-colors">
-                        GitHub: @rabble
-                      </a>
-                      <p className="text-[#666666]">rabble@nos.social</p>
-                    </div>
-                  </div>
+              {/* Podcast */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-[#71a882]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🎙️</span>
                 </div>
+                <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-2">Podcast</h3>
+                <a href="https://revolution.social" target="_blank" rel="noopener noreferrer" className="text-[#71a882] hover:text-[#5d8d6d] transition-colors">
+                  revolution.social
+                </a>
               </div>
             </div>
 
-            {/* Additional Info */}
-            <div className="bg-white p-8 rounded-lg border border-[#e5e1da]">
-              <h3 className="font-display text-xl font-bold text-[#2a2a2a] mb-4">
-                Working Together
-              </h3>
-              <p className="text-[#666666] mb-4">
-                I'm particularly interested in projects that:
-              </p>
-              <ul className="space-y-2 text-[#666666]">
-                <li className="flex items-start">
-                  <span className="text-[#71a882] mr-2">•</span>
-                  Focus on social impact and positive change
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#71a882] mr-2">•</span>
-                  Build decentralized or commons-based platforms
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#71a882] mr-2">•</span>
-                  Challenge existing power structures
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#71a882] mr-2">•</span>
-                  Create tools that empower communities
-                </li>
-              </ul>
+            {/* Social Links */}
+            <div className="border-t border-[#e5e1da] pt-8">
+              <h3 className="font-mono text-sm font-semibold text-[#2a2a2a] mb-4 text-center">Find Me Online</h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="https://rabble.nos.social" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[#9945FF] text-white rounded-lg hover:bg-[#8835EF] transition-colors">
+                  Nostr
+                </a>
+                <a href="https://twitter.com/rabble" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[#1DA1F2] text-white rounded-lg hover:bg-[#1991E2] transition-colors">
+                  Twitter
+                </a>
+                <a href="https://bsky.app/profile/rabble.nz" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[#00A8E8] text-white rounded-lg hover:bg-[#0098D8] transition-colors">
+                  Bluesky
+                </a>
+                <a href="https://github.com/rabble" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[#333333] text-white rounded-lg hover:bg-[#222222] transition-colors">
+                  GitHub
+                </a>
+                <a href="https://linkedin.com/in/rabble" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[#0077B5] text-white rounded-lg hover:bg-[#0067A5] transition-colors">
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -44,6 +44,24 @@ function Navigation() {
                 )}
               </Link>
             ))}
+            
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-4 ml-4 pl-4 border-l border-[#e8e4de]">
+              <a
+                href="https://revolution.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-[#71a882] text-white rounded-lg font-mono text-sm hover:bg-[#5a8a6b] transition-all"
+              >
+                🎙️ Listen
+              </a>
+              <a
+                href="mailto:evan@henshaw-plath.com?subject=Podcast%20Guest%20Invitation"
+                className="px-4 py-2 border border-[#71a882] text-[#71a882] rounded-lg font-mono text-sm hover:bg-[#71a882] hover:text-white transition-all"
+              >
+                📧 Book Me
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,6 +109,24 @@ function Navigation() {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Mobile CTAs */}
+              <div className="pt-4 mt-4 border-t border-[#e8e4de] space-y-3">
+                <a
+                  href="https://revolution.social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 bg-[#71a882] text-white rounded-lg font-mono text-sm text-center"
+                >
+                  🎙️ Listen to Revolution.social
+                </a>
+                <a
+                  href="mailto:evan@henshaw-plath.com?subject=Podcast%20Guest%20Invitation"
+                  className="block px-4 py-2 border border-[#71a882] text-[#71a882] rounded-lg font-mono text-sm text-center"
+                >
+                  📧 Book Me for Your Podcast
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

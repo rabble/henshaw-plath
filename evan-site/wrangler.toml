@@ -1,8 +1,9 @@
 # ABOUTME: Cloudflare Pages configuration file
 # ABOUTME: Defines build settings for deployment
 
-name = "evan-henshaw-plath"
+name = "henshaw-plath"
 compatibility_date = "2024-01-01"
+account_id = "c84e7a9bf7ed99cb41b8e73566568c75"
 
 [site]
 bucket = "./dist"

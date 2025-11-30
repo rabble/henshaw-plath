@@ -16,6 +16,11 @@ interface Talk {
 
 const talks: Talk[] = [
   {
+    title: "How to Replace Twitter, Instagram, TikTok & YouTube",
+    description: "Discussion about replacing centralized social media platforms with decentralized alternatives. Exploring the technical and social challenges of building better social media systems.",
+    videoId: "nzlc3bnaoJI",
+  },
+  {
     title: "Social Media: Keeping up with Communities",
     description: "Walter Issacson's Trailblazer podcast covered the history of social media and my work from Indymedia through Odeo podcasting and twitter through today.",
     videoId: "I7TXT9H3MVQ",

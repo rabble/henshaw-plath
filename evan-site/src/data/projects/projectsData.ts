@@ -34,26 +34,80 @@ The technical architecture is revolutionary yet elegant. There are no central se
 nos.social is completely open source, inviting developers worldwide to contribute, fork, and build upon our work. This isn't just about building a product – it's about creating a movement towards a more open, decentralized internet where users are citizens, not products.`
   },
   {
+    slug: "protest-net",
+    title: "protest.net",
+    category: ["Civic Tech"],
+    summary: "Pioneering activist calendar and network for coordinating protests",
+    releaseDate: "1998",
+    imageUrl: "/images/projects/protest-net.jpg",
+    fullDescription: `protest.net was one of the first online tools for grassroots activism, founded in 1998 to address a critical gap in how protests and demonstrations were publicized and coordinated. The project emerged from observing that mainstream media only covered protests when conflict or violence occurred, leaving peaceful actions and important causes invisible.
+
+As founder of protest.net, I built an online calendar and communication hub that allowed activists to publicize upcoming demonstrations, coordinate participation across movements, and document events independently of traditional media narratives. This was revolutionary at a time when the internet was still emerging as a tool for social change.
+
+The platform played a crucial role in major protests, including the 1999 WTO protests in Seattle (the "Battle of Seattle"), where it enabled rapid response and coordination that caught authorities off guard. protest.net demonstrated how technology could empower movements to control their own narratives and coordinate actions without relying on traditional institutions.
+
+The technical architecture pioneered decentralized, community-driven approaches that would influence my later work. The lessons learned about distributed organizing and open publishing directly influenced the creation of Indymedia and SMS-based activist networks like TxtMob. These same principles would eventually find their way into mainstream social media platforms.
+
+protest.net stands as an early example of using the open web for grassroots activism, predating corporate social media by years. It established principles of open publishing and community-driven technology that remain central to digital activism today.`
+  },
+  {
+    slug: "indymedia",
+    title: "Indymedia",
+    category: ["Civic Tech"],
+    summary: "Grassroots media activist network for independent journalism",
+    releaseDate: "1999-2004",
+    externalLink: "https://indymedia.org",
+    imageUrl: "/images/projects/indymedia.jpeg",
+    fullDescription: `Indymedia began in 1999 during the WTO protests in Seattle, born from a simple but radical idea: "Don't hate the media, become the media." As co-founder of the technology group, I coordinated network governance and developed the software that would enable social movements to tell their own stories through this groundbreaking open source media activist network.
+
+The project emerged from the recognition that mainstream media wasn't telling the full story of the global justice movement. We created an open publishing platform that allowed anyone to upload text, photos, audio, and video – revolutionary at a time when publishing online required technical expertise.
+
+Within months, Indymedia spread virally across the globe. From Seattle, it expanded to cover protests and movements in Washington DC, Prague, Genoa, and beyond. Through 2004, I provided on-the-ground support to help establish new chapters, set up computer labs, and create open media labs in multiple countries. At its peak, the network included over 180 local chapters in 60 countries, publishing in more than 30 languages.
+
+The technical infrastructure we built was as radical as the content. We pioneered distributed, volunteer-run servers that could withstand government censorship and corporate attacks. The open-source content management system we developed influenced a generation of online publishing tools and helped establish the technical foundations for decentralized media.
+
+The impact was undeniable. Indymedia was nominated for the Webby Award for best news site, recognizing its innovation in digital journalism. But beyond awards, we trained thousands of activists to be media makers, democratizing journalism and challenging corporate media monopolies. The network covered stories ignored by mainstream outlets: police brutality, corporate malfeasance, grassroots organizing, and voices from the Global South.
+
+The principles we established – open publishing, consensus-based decision making, and radical transparency – influenced everything from Wikipedia to contemporary citizen journalism. Indymedia proved that another media was possible, laying the groundwork for today's understanding that media democracy is essential to political democracy.`
+  },
+  {
+    slug: "odeo",
+    title: "Odeo",
+    category: ["Startup"],
+    summary: "Pioneered podcasting and pivoted to become Twitter",
+    client: "Odeo Inc",
+    releaseDate: "2005",
+    externalLink: "https://en.wikipedia.org/wiki/Odeo",
+    imageUrl: "/images/projects/odeo.png",
+    fullDescription: `Odeo holds a unique place in internet history as the company that pioneered podcasting infrastructure and, through a dramatic pivot, gave birth to Twitter. As the lead engineer and first employee, I was there from the very beginning of this remarkable journey.
+
+Founded in 2004 in San Francisco, Odeo set out to democratize audio broadcasting. We built tools that made creating and distributing podcasts as easy as blogging. This was revolutionary at a time when producing internet audio required expensive equipment and technical expertise.
+
+Our team included future tech luminaries: Ev Williams (who had previously founded Blogger), Biz Stone, Jack Dorsey, and others who would go on to shape the internet. We created a culture of experimentation and rapid iteration that would later become the hallmark of Twitter.
+
+When Apple announced podcast support in iTunes, it became clear our business model was threatened. Instead of giving up, we held hackathons to explore new ideas. During one of these sessions, Jack Dorsey presented his idea for a "status" service – what would become Twitter.
+
+The pivot from Odeo to Twitter wasn't just a business decision; it was a complete reimagining of how people could communicate online. We took the real-time, broadcasting elements of podcasting and applied them to text, creating the micro-blogging phenomenon.
+
+I helped hire Jack Dorsey and worked closely with him to build the initial Twitter prototype. The early technical decisions we made – the 140-character limit, the follower model, the emphasis on real-time updates – shaped how billions of people would eventually communicate.
+
+The story of Odeo is a testament to the power of adaptability and innovation. What started as a podcasting company became one of the most influential communication platforms in history, fundamentally changing how news breaks, how movements organize, and how people connect across the globe.`
+  },
+  {
     slug: "nobinarie",
     title: "nobinarie.com",
-    category: ["Civic Tech", "Startup"],
-    summary: "Inclusive social platform celebrating trans and non-binary voices",
+    category: ["Civic Tech", "Open Source"],
+    summary: "Gender-inclusive Spanish spell check dictionary",
     releaseDate: "2024",
     externalLink: "https://nobinarie.com",
-    imageUrl: "/images/projects/nobinarie.png",
-    fullDescription: `nobinarie.com represents a groundbreaking approach to creating safe, inclusive online spaces for trans, non-binary, and gender-diverse communities. In an era where mainstream social platforms often fail to protect or properly serve LGBTQ+ users, nobinarie emerged as a dedicated platform built from the ground up with inclusivity, safety, and authentic expression at its core.
+    imageUrl: "/images/projects/nobinarie.jpg",
+    fullDescription: `nobinarie is an open-source Spanish dictionary project that includes gender-neutral vocabulary. Traditional spell checkers only recognize masculine and feminine forms, so this dictionary adds support for gender-inclusive language like "latine" (instead of latino/latina) and "amigue" (instead of amigo/amiga).
 
-The project was born from recognizing that existing social networks weren't designed with gender diversity in mind. From binary gender fields to inadequate moderation policies, trans and non-binary users faced constant friction and often harassment. nobinarie reimagined social networking through a lens of radical inclusivity.
+The project catalogs Spanish words that use "e" endings and other gender-neutral forms that Spanish speakers actually use. Instead of building another spell checker, it provides datasets that can be integrated into existing word processors, browsers, and other text tools.
 
-Every technical and design decision prioritized user safety and authentic self-expression. The platform features comprehensive pronoun support, flexible gender expression options, and nuanced privacy controls that allow users to share different aspects of their identity with different audiences. The moderation system was built with deep understanding of the specific challenges faced by gender-diverse communities.
+Contributors help identify how gender-inclusive Spanish is used across different regions. The goal is to make these language innovations more accessible to developers and everyday users who want their tools to recognize how Spanish is evolving.
 
-Beyond just creating a safe space, nobinarie fostered genuine community building. The platform includes features for finding support, sharing resources, celebrating milestones in gender journeys, and connecting with others who share similar experiences. It became a hub for mutual aid, activism, and joy within the trans and non-binary community.
-
-The technical architecture emphasizes user privacy and data sovereignty. Strong encryption, minimal data collection, and transparent policies ensure that users can express themselves authentically without fear of their data being weaponized against them. The platform operates on principles of consent and user control.
-
-nobinarie's impact extends beyond its immediate user base. By demonstrating that inclusive design isn't just possible but essential, the platform influenced how other tech companies approach gender diversity. It proved that when marginalized communities are centered in the design process, the resulting products serve everyone better.
-
-The project stands as a testament to the power of technology to create positive social change when it's guided by values of inclusion, safety, and community empowerment.`
+It's a small contribution toward making digital spaces work better for non-binary Spanish speakers.`
   },
   {
     slug: "planetary",
@@ -131,49 +185,6 @@ The company culture was intentionally radical. We created flat hierarchies, enco
 Managing the integration of half a dozen acquisitions while maintaining our culture and quality was one of my greatest challenges and achievements. Each acquisition brought new capabilities and perspectives, strengthening our ability to serve clients across industries and geographies.
 
 Neo's success caught the attention of Pivotal, who acquired the company in 2016. The acquisition validated our approach and spread our methodologies to an even larger audience, influencing how thousands of developers and organizations approach product development.`
-  },
-  {
-    slug: "indymedia",
-    title: "Indymedia",
-    category: ["Civic Tech"],
-    summary: "Grassroots media activist network for independent journalism",
-    releaseDate: "1999",
-    externalLink: "https://indymedia.org",
-    imageUrl: "/images/projects/indymedia.jpeg",
-    fullDescription: `Indymedia began in 1999 during the WTO protests in Seattle, born from a simple but radical idea: "Don't hate the media, become the media." As one of the co-founders and core technologists, I helped build what would become a global network of independent media centers.
-
-The project emerged from the recognition that mainstream media wasn't telling the full story of the global justice movement. We created an open publishing platform that allowed anyone to upload text, photos, audio, and video – revolutionary at a time when publishing online required technical expertise.
-
-Within months, Indymedia spread virally across the globe. From Seattle, it expanded to cover protests and movements in Washington DC, Prague, Genoa, and beyond. At its peak, the network included over 180 local chapters in 60 countries, publishing in more than 30 languages.
-
-The technical infrastructure we built was as radical as the content. We pioneered distributed, volunteer-run servers that could withstand government censorship and corporate attacks. The open-source content management system we developed influenced a generation of online publishing tools.
-
-But Indymedia was more than technology – it was a movement. We trained thousands of activists to be media makers, democratizing journalism and challenging corporate media monopolies. The network covered stories ignored by mainstream outlets: police brutality, corporate malfeasance, grassroots organizing, and voices from the Global South.
-
-The principles we established – open publishing, consensus-based decision making, and radical transparency – influenced everything from Wikipedia to contemporary citizen journalism. Indymedia proved that another media was possible, laying the groundwork for today's understanding that media democracy is essential to political democracy.`
-  },
-  {
-    slug: "odeo",
-    title: "Odeo",
-    category: ["Startup"],
-    summary: "Pioneered podcasting and pivoted to become Twitter",
-    client: "Odeo Inc",
-    releaseDate: "2005",
-    externalLink: "https://en.wikipedia.org/wiki/Odeo",
-    imageUrl: "/images/projects/odeo.png",
-    fullDescription: `Odeo holds a unique place in internet history as the company that pioneered podcasting infrastructure and, through a dramatic pivot, gave birth to Twitter. As the lead engineer and first employee, I was there from the very beginning of this remarkable journey.
-
-Founded in 2004 in San Francisco, Odeo set out to democratize audio broadcasting. We built tools that made creating and distributing podcasts as easy as blogging. This was revolutionary at a time when producing internet audio required expensive equipment and technical expertise.
-
-Our team included future tech luminaries: Ev Williams (who had previously founded Blogger), Biz Stone, Jack Dorsey, and others who would go on to shape the internet. We created a culture of experimentation and rapid iteration that would later become the hallmark of Twitter.
-
-When Apple announced podcast support in iTunes, it became clear our business model was threatened. Instead of giving up, we held hackathons to explore new ideas. During one of these sessions, Jack Dorsey presented his idea for a "status" service – what would become Twitter.
-
-The pivot from Odeo to Twitter wasn't just a business decision; it was a complete reimagining of how people could communicate online. We took the real-time, broadcasting elements of podcasting and applied them to text, creating the micro-blogging phenomenon.
-
-I helped hire Jack Dorsey and worked closely with him to build the initial Twitter prototype. The early technical decisions we made – the 140-character limit, the follower model, the emphasis on real-time updates – shaped how billions of people would eventually communicate.
-
-The story of Odeo is a testament to the power of adaptability and innovation. What started as a podcasting company became one of the most influential communication platforms in history, fundamentally changing how news breaks, how movements organize, and how people connect across the globe.`
   }
 ];
 

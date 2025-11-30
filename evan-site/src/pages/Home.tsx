@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { projectsData } from '../data/projects/projectsData';
 import Organizations from '../components/sections/Organizations';
 import ExperienceTimeline from '../components/sections/ExperienceTimeline';
-import InstagramFeed from '../components/sections/InstagramFeed';
+import SocialFeed from '../components/sections/SocialFeed';
 
 function Home() {
   return (
@@ -110,11 +110,14 @@ function Home() {
                   <a href="https://linkedin.com/in/rabble" className="block font-mono text-sm text-[#71a882] hover:underline">
                     LinkedIn: @rabble
                   </a>
-                  <a href="https://nos.social/rabble" className="block font-mono text-sm text-[#71a882] hover:underline">
+                  <a href="https://rabble.nos.social" className="block font-mono text-sm text-[#71a882] hover:underline">
                     Nostr: rabble@nos.social
                   </a>
                   <a href="https://revolution.social" className="block font-mono text-sm text-[#71a882] hover:underline">
                     Podcast: revolution.social
+                  </a>
+                  <a href="https://github.com/rabble" className="block font-mono text-sm text-[#71a882] hover:underline">
+                    GitHub: @rabble
                   </a>
                 </div>
               </div>
@@ -146,8 +149,12 @@ function Home() {
                 className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
                 <Link to={`/projects/${project.slug}`}>
-                  <div className="aspect-video bg-[#e8e4de]">
-                    {/* Project thumbnail placeholder */}
+                  <div className="aspect-video bg-[#e8e4de] overflow-hidden">
+                    <img
+                      src={project.imageUrl}
+                      alt={project.title}
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="font-display text-xl font-bold mb-2 text-[#2a2a2a]">
@@ -206,22 +213,116 @@ function Home() {
       {/* Experience Timeline */}
       <ExperienceTimeline />
 
-      {/* Instagram Feed */}
-      <InstagramFeed />
+      {/* Social Feed */}
+      <SocialFeed />
 
-      {/* CTA Section */}
-      <section className="px-6 lg:px-12 py-16 bg-[#2a2a2a] text-white">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-display text-3xl font-bold mb-6">Ready to Build Something Amazing?</h2>
-          <p className="font-sans text-lg mb-8 text-white/80">
-            Let's discuss how I can help bring your vision to life.
-          </p>
-          <Link 
-            to="/contact" 
-            className="inline-block px-8 py-4 bg-white text-[#2a2a2a] font-mono text-sm rounded-lg hover:bg-gray-100 transition-colors"
+      {/* Primary CTAs Section */}
+      <section className="px-6 lg:px-12 py-16 bg-gradient-to-br from-[#71a882] to-[#5a8a6b] text-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="font-display text-4xl font-bold text-center mb-12"
           >
-            Get In Touch
-          </Link>
+            Join the Movement
+          </motion.h2>
+          
+          {/* Revolution.social Podcast CTA */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8"
+          >
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+              <div className="flex-1">
+                <h3 className="font-display text-3xl font-bold mb-2">🎙️ Revolution.social</h3>
+                <p className="text-lg text-white/90">
+                  My podcast exploring technology, society, and social change. Deep conversations about building a better future.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <a 
+                  href="https://revolution.social" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-white text-[#71a882] rounded-lg font-mono font-semibold hover:bg-white/90 transition-all"
+                >
+                  Listen Now
+                </a>
+                <a 
+                  href="mailto:evan@henshaw-plath.com?subject=Guest%20for%20Revolution.social" 
+                  className="px-6 py-3 border-2 border-white text-white rounded-lg font-mono font-semibold hover:bg-white/10 transition-all"
+                >
+                  Be a Guest
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* My Apps Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"
+          >
+            <a 
+              href="https://nos.social" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all group"
+            >
+              <h4 className="font-display text-xl font-bold mb-2 group-hover:underline">nos.social</h4>
+              <p className="text-sm text-white/80">Decentralized social media on Nostr. Own your social graph.</p>
+            </a>
+            
+            <a 
+              href="https://holis.social" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all group"
+            >
+              <h4 className="font-display text-xl font-bold mb-2 group-hover:underline">holis.social</h4>
+              <p className="text-sm text-white/80">Holistic social networking. Coming soon.</p>
+            </a>
+            
+            <a 
+              href="https://chorus.community" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all group"
+            >
+              <h4 className="font-display text-xl font-bold mb-2 group-hover:underline">chorus.community</h4>
+              <p className="text-sm text-white/80">Community-driven coordination tools.</p>
+            </a>
+          </motion.div>
+
+          {/* andotherstuff.org Fund */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-white rounded-lg p-8 text-[#2a2a2a] mb-8"
+          >
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+              <div className="flex-1">
+                <h3 className="font-display text-2xl font-bold mb-2">💰 andotherstuff.org</h3>
+                <p className="text-[#666666]">
+                  New fund supporting decentralized social media and democratic technology projects.
+                </p>
+              </div>
+              <a 
+                href="https://andotherstuff.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[#71a882] text-white rounded-lg font-mono font-semibold hover:bg-[#5a8a6b] transition-all"
+              >
+                Learn More
+              </a>
+            </div>
+          </motion.div>
+
         </div>
       </section>
     </div>
