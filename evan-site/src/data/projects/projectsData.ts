@@ -16,6 +16,28 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    slug: "divine",
+    title: "diVine",
+    category: ["Startup", "Open Source"],
+    summary: "Reviving Vine as a decentralized short-form video platform on Nostr",
+    releaseDate: "November 2024",
+    externalLink: "https://divine.video",
+    imageUrl: "/images/projects/divine.png",
+    fullDescription: `diVine is a resurrection of Vine, the beloved short-form looping video platform that Twitter shut down in 2016. Built on the Nostr protocol, diVine brings back the magic of six-second videos while pioneering a new model for decentralized, creator-owned social media.
+
+The project began with an ambitious technical challenge: recovering Vine's video archive. When Twitter announced Vine's shutdown, the Archive Team – a volunteer collective dedicated to preserving internet history – managed to back up millions of videos in massive 40-50 GB binary files. I spent months writing custom extraction tools to recover as many videos as possible, reconstructing metadata, creator information, and even portions of the original comments. The result: approximately 150,000-200,000 videos from roughly 60,000 creators brought back to life.
+
+The inspiration came from conversations on the Revolution.Social podcast, where tech journalist Taylor Lorenz and former Twitter trust & safety head Yoel Roth expressed how much they missed Vine's unique creative culture. That nostalgia, combined with my work on Nostr-based social platforms, sparked the idea to rebuild Vine on decentralized infrastructure.
+
+diVine takes a firm stance against AI-generated content. Using technology from the Guardian Project, a human-rights nonprofit known for verifying media authenticity, the platform checks whether clips came from real smartphone cameras rather than AI generation pipelines. This ensures diVine remains a space for authentic human creativity.
+
+Because creators still hold rights to their original content, diVine allows them to request removals or reclaim their accounts by confirming ownership of social accounts tied to their original Vine bios. This respect for creator ownership is fundamental to the project's values.
+
+The platform is funded by Jack Dorsey's nonprofit "and Other Stuff," which supports open-source protocol development. As Dorsey explained: "Nostr – the underlying open source protocol being used by diVine – is empowering developers to create a new generation of apps without the need for VC-backing, toxic business models or huge teams of engineers."
+
+Building on Nostr means diVine is inherently decentralized and censorship-resistant. The open-source architecture allows developers to host their own infrastructure, customize clients, or build entirely new apps that interoperate with diVine's content ecosystem. It's not just a platform – it's a foundation for a new generation of creator-owned video sharing.`
+  },
+  {
     slug: "nos-social",
     title: "nos.social",
     category: ["Startup"],
